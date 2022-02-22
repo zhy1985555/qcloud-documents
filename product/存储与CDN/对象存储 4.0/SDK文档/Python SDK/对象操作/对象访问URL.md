@@ -55,7 +55,7 @@ print(response)
 | 参数名称   | 参数描述   |类型 | 必填 | 
 | -------------- | -------------- |---------- | ----------- |
  | Bucket  |存储桶名称，由 BucketName-APPID 构成 |  String |  是 | 
- | Key  | 对象键（Key）是对象在存储桶中的唯一标识。例如，在对象的访问域名 `examplebucket-1250000000.cos.ap-guangzhou.myqcloud.com/doc/pic.jpg` 中，对象键为 doc/pic.jpg | String | 是 | 
+ | Key  | 对象键（Key）是对象在存储桶中的唯一标识。例如，在对象的访问域名 `examplebucket-1250000000.cos-internal.ap-guangzhou.tencentcos.cn/doc/pic.jpg` 中，对象键为 doc/pic.jpg | String | 是 | 
 
 #### 返回结果说明
 

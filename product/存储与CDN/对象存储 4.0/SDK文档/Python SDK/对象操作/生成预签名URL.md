@@ -251,7 +251,7 @@ response = client.get_presigned_url(
 | 参数名称   | 参数描述   |类型 | 是否必填 | 
 | -------------- | -------------- |---------- | ----------- |
 | Bucket  |存储桶名称，由 BucketName-APPID 构成 |  String |  是 | 
-| Key  | 对象键（Key）是对象在存储桶中的唯一标识。例如，在对象的访问域名 `examplebucket-1250000000.cos.ap-guangzhou.myqcloud.com/doc/pic.jpg` 中，对象键为 doc/pic.jpg | String | 是 | 
+| Key  | 对象键（Key）是对象在存储桶中的唯一标识。例如，在对象的访问域名 `examplebucket-1250000000.cos-internal.ap-guangzhou.tencentcos.cn/doc/pic.jpg` 中，对象键为 doc/pic.jpg | String | 是 | 
 | Method  |对应操作的 Method, 可选值为 'PUT'，'POST'，'GET'，'DELETE'，'HEAD'|  String |  是 | 
 |Expired| 签名过期时间，单位为秒| Int| 否|
 |Params| 预签名URL中的请求参数。指定了请求参数，则URL中会携带此请求参数，并且请求参数会算入签名，不允许使用者修改请求参数的值。可以携带的Params和具体的操作相关，例如下载对象可以携带和签入的Params参见 [GET Object 中的请求参数](https://cloud.tencent.com/document/product/436/7753#.E8.AF.B7.E6.B1.82)描述| Dict| 否|
@@ -383,7 +383,7 @@ response = client.get_presigned_download_url(
 | 参数名称   | 参数描述   |类型 | 是否必填 | 
 | -------------- | -------------- |---------- | ----------- |
 | Bucket  |存储桶名称，由 BucketName-APPID 构成 |  String |  是 | 
-| Key  | 对象键（Key）是对象在存储桶中的唯一标识。例如，在对象的访问域名 `examplebucket-1250000000.cos.ap-guangzhou.myqcloud.com/doc/pic.jpg` 中，对象键为 doc/pic.jpg | String | 是 | 
+| Key  | 对象键（Key）是对象在存储桶中的唯一标识。例如，在对象的访问域名 `examplebucket-1250000000.cos-internal.ap-guangzhou.tencentcos.cn/doc/pic.jpg` 中，对象键为 doc/pic.jpg | String | 是 | 
 |Expired| 签名过期时间，单位为秒| Int| 否|
 |Params| 预签名URL中的请求参数。指定了请求参数，则URL中会携带此请求参数，并且请求参数会算入签名，不允许使用者修改请求参数的值。可以携带的Params和具体的操作相关，例如下载对象可以携带和签入的Params参见 [GET Object 中的请求参数](https://cloud.tencent.com/document/product/436/7753#.E8.AF.B7.E6.B1.82)描述| Dict| 否|
 |Headers| 预签名URL中要签入的请求头部。预签名URL本身是不包含请求头部的，但请求头部会算入签名，那么使用URL时就必须携带请求头部，并且请求头部的值必须是这里指定的值。可以签入的Headers和具体的操作相关，例如上传对象可以签入的Headers参见 [PUT Object 中的请求头](https://cloud.tencent.com/document/product/436/7749#.E8.AF.B7.E6.B1.82)描述| Dict| 否|
