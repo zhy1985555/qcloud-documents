@@ -13,7 +13,7 @@ TRTC 云服务由两种不同类型的服务器节点组成，分别是“接口
 ![](https://main.qcloudimg.com/raw/b88a624c0bd67d5d58db331b3d64c51c.gif)
 
 ## 示例代码
-您可以登录 [Github](https://github.com/tencentyun/TRTCSDK/tree/master/Android/TRTC-API-Example) 获取本文档相关的示例代码。
+您可以登录 [Github](https://github.com/LiteAVSDK/TRTC_Android/tree/main/TRTC-API-Example) 获取本文档相关的示例代码。
 ![](https://main.qcloudimg.com/raw/cdef573133900a8dce22dcca5242fcfc.png)
 
 >?如果访问 Github 较慢，您也可以直接下载 [TXLiteAVSDK_TRTC_Android_latest.zip](https://liteav.sdk.qcloud.com/download/latest/TXLiteAVSDK_TRTC_Android_latest.zip)。
@@ -33,12 +33,12 @@ dependencies {
 }
 ```
 2. 在 defaultConfig 中，指定 App 使用的 CPU 架构。
->?目前 TRTC SDK 支持 armeabi ， armeabi-v7a 和 arm64-v8a。
+>?目前 TRTC SDK 支持 armeabi-v7a 和 arm64-v8a。
 >
 ```
  defaultConfig {
       ndk {
-          abiFilters "armeabi", "armeabi-v7a", "arm64-v8a"
+          abiFilters "armeabi-v7a", "arm64-v8a"
       }
   }
 ```
